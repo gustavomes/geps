@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr; /* Menu + Coluna principal + Coluna lateral */
+    height: 100vh;
+   
+    background-color: #f5f5f5;
+  }
+  
+  .menu {
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    
+    
+  }
+  .menu ul li a {
+    list-style: none;
+  }
+  
+  .main {
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100hv;
+  }
+  
+  .header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    margin-bottom: 20px;
+    color: #369fff;
+    margin-bottom: 2rem;
+  }
+
+  .header h3 {
+    color: #369FFF;
+    font-family: Manrope;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+
+  }
+
+  .header p {
+    color: #369FFF;
+    font-family: Manrope;
+    font-size: 1.1rem;
+    font-style: normal;
+    
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+
+  }
+  
+  .title {
+    font-family: 'Manrope', sans-serif;
+    color: #000;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+  }
+
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, min-content); /* Duas colunas com largura mínima necessária */
+    gap: 2rem; /* Espaço entre os cards */
+    justify-content: start; /* Alinha as colunas à esquerda */
+    align-items: center; /* Alinha os cards verticalmente no centro */
+    padding-left: 1rem; /* Ajusta a margem para posicionar mais à esquerda */
+    height: 100hv;
+  }
+  
+  .card1 {
+
+    
+    width: 18.75rem;
+    height: 9.375rem;
+   
+   
+  }
+  
+  .card2 {
+    background-color: #ccc316d3; /* Laranja */
+    padding: 4rem;
+    width: 18.75rem;
+    height: 9.375rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .card3 {
+    background-color: #369FFF;
+    padding: 4rem;
+    width: 18.75rem;
+    height: 9.375rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .card4 {
+    background-color: #F44336; /* Vermelho */
+    padding: 4rem;
+    width: 18.75rem;
+    height: 9.375rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .statistics {
+    margin-top: 4.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .statCard {
+    padding: 6rem 4rem;
+    background-color: #e3f2fd;
+    color: #007bff;
+    border-radius: 8px;
+    
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chart {
+    padding: 20px;
+    background-color: #f1f8e9;
+    color: #8bc34a;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) { /* Tamanho ajustável conforme necessário */
+    .container {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        grid-gap: 10px; /* Espaço entre os elementos */
+    }
+
+    .menu {
+        grid-row: 1;
+    }
+
+    .main {
+        grid-row: 2;
+    }
+
+    .sidebar {
+        grid-row: 3; /* Barra lateral abaixo da coluna principal */
+    }
+}

@@ -1,0 +1,15 @@
+.container ul {
+    display:flex ;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+  
+}
+
+.item { 
+    display: flex;
+    text-decoration: none;
+}
