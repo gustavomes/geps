@@ -91,8 +91,9 @@ const Dashboard = () => {
       <div className={style.chart}>
         {/* Substitua pelo componente de gráfico, se necessário */}
         <h2>Activity</h2>
-        <p>Graph Placeholder</p>
+        <p>gráfico</p>
       </div>
+      
     </div>
   </div>
   </>
