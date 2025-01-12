@@ -1,0 +1,11 @@
+.container {
+    padding: 2rem;
+    
+}
+
+.item {
+    text-decoration: none;
+    padding: 1rem;
+    list-style: none;
+
+}
